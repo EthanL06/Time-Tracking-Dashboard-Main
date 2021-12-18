@@ -25,5 +25,5 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw)
+- [Solution URL](https://www.frontendmentor.io/solutions/time-tracking-dashboard-using-scss-xuPJna2Ku)
 - [Live Site URL](https://ethanl06.github.io/Time-Tracking-Dashboard-Main/)
