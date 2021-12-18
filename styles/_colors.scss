@@ -1,0 +1,22 @@
+$blue: hsl(246, 80%, 60%);
+$dark-blue: hsl(235, 46%, 20%);
+$dark-blue-hover: hsl(235, 46%, 30%);
+$very-dark-blue: hsl(226, 43%, 10%);
+$desaturated-blue: hsl(235, 45%, 61%);
+$pale-blue: hsl(236, 100%, 87%);
+
+@function getActivityColor($activity) {
+    @if $activity == work {
+        @return hsl(15, 100%, 70%);
+    } @else if $activity == play {
+        @return hsl(195, 74%, 62%);
+    } @else if $activity == study {
+        @return hsl(348, 100%, 68%);
+    } @else if $activity == exercise {
+        @return hsl(145, 58%, 55%);
+    } @else if $activity == social {
+        @return hsl(264, 64%, 52%);
+    } @else if $activity == self-care {
+        @return hsl(43, 84%, 65%);
+    }
+}

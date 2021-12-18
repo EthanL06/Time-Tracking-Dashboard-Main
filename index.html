@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles/style.css">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+
+  <div class="grid">
+      <div class="overview">
+        <div class="report-author">
+          <img class="author-image" src="images/image-jeremy.png" alt="">
+          <div class="author-wrap">
+            Report for
+            <span>Jeremy Robson</span>
+          </div>
+        </div>
+
+        <div class="wrapper">
+          <div class="time">
+            <span>Daily</span>
+            <span>Weekly</span>
+            <span>Monthly</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity" id="work">
+        <div class="activity-body">
+          <div class="activity-header">
+            <span>Work</span>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="currentColor" fill-rule="evenodd" /></svg>
+          </div>
+          <div class="time-wrapper">
+            <div class="activity-time">
+              5hrs
+            </div>
+
+            <div class="activity-previous-time">
+              Last Day - 7hrs
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="activity" id="play">
+        <div class="activity-body">
+          <div class="activity-header">
+            <span>Play</span>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="currentColor" fill-rule="evenodd" /></svg>
+          </div>
+          <div class="time-wrapper">
+            <div class="activity-time">
+            1hrs
+            </div>
+
+            <div class="activity-previous-time">
+              Last Day - 2hrs
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+
+
+      <div class="activity" id="study">
+        <div class="activity-body">
+          <div class="activity-header">
+            <span>Study</span>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="currentColor" fill-rule="evenodd" /></svg>
+          </div>
+          <div class="time-wrapper">
+            <div class="activity-time">
+            0hrs
+            </div>
+
+            <div class="activity-previous-time">
+              Last Day - 1hrs
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="activity" id="exercise">
+        <div class="activity-body">
+          <div class="activity-header">
+            <span>Exercise</span>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="currentColor" fill-rule="evenodd" /></svg>
+          </div>
+          <div class="time-wrapper">
+            <div class="activity-time">
+            1hrs
+            </div>
+
+            <div class="activity-previous-time">
+              Last Day - 1hrs
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="activity" id="social">
+        <div class="activity-body">
+          <div class="activity-header">
+            <span>Social</span>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="currentColor" fill-rule="evenodd" /></svg>
+          </div>
+          <div class="time-wrapper">
+            <div class="activity-time">
+              1hrs
+            </div>
+
+            <div class="activity-previous-time">
+              Last Day - 3hrs
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="activity" id="self-care">
+        <div class="activity-body">
+          <div class="activity-header">
+            <span>Self Care</span>
+              <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+                  fill="currentColor" fill-rule="evenodd" /></svg>
+          </div>
+          <div class="time-wrapper">
+            <div class="activity-time">
+              0hrs
+            </div>
+
+            <div class="activity-previous-time">
+              Last Day - 1hrs
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <script src="script.js" defer></script>
+  </div>
+</body>
+</html>

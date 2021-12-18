@@ -1,0 +1,14 @@
+.grid {
+    margin: 3rem 1rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 255px);
+    grid-template-rows: repeat(2, 244px);
+    gap: 30px;
+
+    transition: all 0.3s ease-in-out; 
+    .overview {
+        grid-row: span 2;
+    }
+}
+

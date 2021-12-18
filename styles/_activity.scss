@@ -1,0 +1,138 @@
+@import "colors";
+
+$activities: work, play, study, exercise, social, self-care;
+$border-radius: 13px;
+$spacing: 1.5rem;
+
+@mixin activity($name) {
+    background: getActivityColor($name) url('../images/icon-#{$name}.svg') no-repeat right top;
+}
+
+@each $activity in $activities {
+    ##{$activity} {
+        @include activity(#{$activity});
+    }
+}
+
+.activity {
+    & {
+        padding-top: $spacing * 2;
+        border-radius: $border-radius;
+    }
+
+    &-body {
+        min-height: 100%;
+        border-radius: $border-radius - 3;
+        background-color: $dark-blue;
+        padding: $spacing;
+        transition: all 0.15s ease-in-out;
+
+        &:hover {
+            background-color: $dark-blue-hover;
+            cursor: pointer;
+        }
+    }
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: $spacing;
+        font-weight: 500;
+
+        span {
+            color: white;
+        }
+
+        svg {
+            color: #BBC0FF;
+            transition: all 0.5 ease-in-out;
+        }
+
+        svg:hover {
+            color: white;
+        }
+    }
+
+    &-time {
+        color: white;
+        margin-bottom: $spacing;
+
+        font: {
+            weight: 300;
+            size: 3rem;
+        }
+    }
+
+    &-previous-time {
+        font-weight: 300;
+        color: $pale-blue;
+    }
+}
+
+.overview {
+    & {
+        background-color: $dark-blue;
+        border-radius: $border-radius;
+        overflow: hidden;
+    }
+
+    .report-author {
+        & {
+            background-color: $blue;
+            padding: $spacing;
+            border-radius: $border-radius;
+            padding-bottom: 5rem;
+            font-weight: 300;
+        }
+
+        .author-wrap {
+            color: $pale-blue;
+        }
+
+        img {
+            display: block;
+            width: 84px;
+            height: 84px;
+            border: 2px solid white;
+            border-radius: 45px;
+            background-color: white;
+            margin-bottom: 3rem;
+        }
+
+        span {
+            display: block;
+            color: white;
+            font-size: 2.5rem;
+        }
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        margin: 1.7rem 2rem;
+    }
+
+    .time {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        font-size: 18px;
+        font-weight: 300;
+        color: $pale-blue;
+        
+        span {
+            transition: all 0.1s ease-in-out;
+
+            &:hover {
+                cursor: pointer;
+                color: white;
+            }
+        }
+
+        span:nth-child(1) {
+            color: white;
+            font-weight: 400;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import "colors";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Rubik', sans-serif;
+
+    background-color: $very-dark-blue;
+}
+
+@import "grid";
+@import "activity";
+@import "mobile";
