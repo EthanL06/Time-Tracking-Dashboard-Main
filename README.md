@@ -25,5 +25,5 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/EthanL06/Time-Tracking-Dashboard-Main/blob/master/README-template.md)
+- [Solution URL](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw)
 - [Live Site URL](https://ethanl06.github.io/Time-Tracking-Dashboard-Main/)
